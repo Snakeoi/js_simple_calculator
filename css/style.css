@@ -47,14 +47,31 @@
 }
 
 .calc .calc__display .calc__display__formula {
-  border-bottom: 1px solid #5c6178;
   font-size: 2rem;
-  min-height: 33px;
+  height: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .calc .calc__display .calc__display__result {
   font-size: 3rem;
-  min-height: 48px;
+  height: 65px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.calc .calc__display .--scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.calc .calc__display .--scroll::-webkit-scrollbar-track {
+  background-color: #51566e;
+}
+
+.calc .calc__display .--scroll::-webkit-scrollbar-thumb {
+  background-color: #c8c8c8;
 }
 
 .calc .calc__keyboard {

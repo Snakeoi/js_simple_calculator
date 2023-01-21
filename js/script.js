@@ -19,6 +19,7 @@ class Calculator {
                     self.display_formula.innerHTML = btn.innerHTML
                 } else {
                     self.display_formula.innerHTML += btn.innerHTML
+                    self.display_formula.scrollLeft = self.display_formula.scrollWidth;
                 }
             });
         }, self=this)
@@ -47,7 +48,7 @@ class Calculator {
                 } else {
                     self.display_formula.innerHTML += btn.innerHTML
                 }
-
+                self.display_formula.scrollLeft = self.display_formula.scrollWidth;
 
             })
             self.operators.push(btn.innerHTML)
@@ -67,8 +68,6 @@ class Calculator {
                     case '=':
                         let real_formula = self.display_formula.innerHTML
                         real_formula = real_formula.replaceAll('x', '*')
-                        //const func = new Function('return ' + real_formula)
-                        //self.display_result.innerHTML = func()
                         try {
                             self.display_result.innerHTML = math.evaluate(real_formula)
                             self.display_error.innerHTML = ''
