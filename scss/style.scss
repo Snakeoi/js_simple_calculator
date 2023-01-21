@@ -30,6 +30,11 @@ $c: rgb(149, 152, 239);
     grid-template-columns: auto;
     box-shadow: 8px 8px 69px 0px rgba(66, 68, 90, 1);
 
+    .calc__error {
+        color: red;
+        height: 16px;
+    }
+
     .calc__display {
         display: grid;
         padding: 10px;

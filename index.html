@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_2.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="calc" id="app">
+            <div class="calc__error">
+            </div>
             <div class="calc__display">
                 <div class="calc__display__formula"></div>
-                <div class="calc__display__result"></div>
+                <div class="calc__display__result">0</div>
             </div>
             <div class="calc__keyboard">
                 <div class="btn-func calc__keyboard__key --c">C</div>
-                <div class="btn-operator calc__keyboard__key">&ne;</div>
-                <div class="btn-operator calc__keyboard__key">%</div>
+                <div class="btn-num calc__keyboard__key">(</div>
+                <div class="btn-num calc__keyboard__key">)</div>
                 <div class="btn-operator calc__keyboard__key">/</div>
                 <div class="btn-num calc__keyboard__key --light">7</div>
                 <div class="btn-num calc__keyboard__key --light">8</div>
