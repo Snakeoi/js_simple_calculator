@@ -1,0 +1,92 @@
+@import url("reset.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-color: #e2e1e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.calc {
+  background-color: #44485c;
+  color: #c8c8c8;
+  max-width: 315px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-shadow: 8px 8px 69px 0px #42445a;
+          box-shadow: 8px 8px 69px 0px #42445a;
+}
+
+.calc .calc__display {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  text-align: right;
+}
+
+.calc .calc__display .calc__display__formula {
+  border-bottom: 1px solid #5c6178;
+  font-size: 2rem;
+  min-height: 33px;
+}
+
+.calc .calc__display .calc__display__result {
+  font-size: 3rem;
+  min-height: 48px;
+}
+
+.calc .calc__keyboard {
+  display: -ms-grid;
+  display: grid;
+  gap: 3px;
+  -ms-grid-columns: (75px)[4];
+      grid-template-columns: repeat(4, 75px);
+  -ms-grid-rows: (75px)[5];
+      grid-template-rows: repeat(5, 75px);
+}
+
+.calc .calc__keyboard .calc__keyboard__key {
+  background-color: #51566e;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calc .calc__keyboard .--c {
+  color: #9598ef;
+}
+
+.calc .calc__keyboard .--light {
+  background-color: #5c6178;
+}
+
+.calc .calc__keyboard .calc__keyboard__key:hover {
+  background-color: #4558ae;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style_2.css.map */
